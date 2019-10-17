@@ -1,0 +1,15 @@
+<h1> TODOS FOR LIST {{list_name}}</h1>
+{{#if todos}}
+<ul>
+    {{#each todos}}
+        <li>
+
+                {{this.todo}}
+
+        </li>
+
+    {{/each}}
+</ul>
+{{else}}
+    <h2 class="text-danger">No todos found!</h2>
+{{/if}}
